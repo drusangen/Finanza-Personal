@@ -2,7 +2,7 @@ Finanzas---JavaFX---API-JAM, Versión 1.0
 ===========================
 Sistema de ingresos y gastos personales, desarrollado en java fx y php
 
-Requisitos. API
+Requisitos. API, [Demo y Documentación](http://dvdeveloper.github.io/JAM/)
 --------------------------------------
 1. Habilitar htaccess
 2. Versión php 5.4 o superior
