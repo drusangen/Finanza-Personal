@@ -1,0 +1,35 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Maven Wagon HTTP Shared Library
+
+
+From: 'an unknown organization'
+  - Codec  commons-codec:commons-codec:jar:1.2
+
+  - Neko HTML (http://nekohtml.sourceforge.net/) nekohtml:nekohtml:jar:1.9.6.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Unnamed - nekohtml:xercesMinimal:jar:1.9.6.2  nekohtml:xercesMinimal:jar:1.9.6.2
+
+
+From: 'Apache Software Foundation' (http://jakarta.apache.org/)
+  - HttpClient (http://jakarta.apache.org/httpcomponents/httpclient-3.x/) commons-httpclient:commons-httpclient:jar:3.1
+    License: Apache License  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Codehaus' (http://www.codehaus.org/)
+  - Plexus Common Utilities  org.codehaus.plexus:plexus-utils:jar:1.4.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Logging (http://jakarta.apache.org/commons/logging/) commons-logging:commons-logging:jar:1.0.4
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Maven Wagon API (http://maven.apache.org/wagon/wagon-provider-api) org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

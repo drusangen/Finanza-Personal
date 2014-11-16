@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pfinanzaspersonales.FXMLController">
+    <children>
+      <Label fx:id="bienvenido" layoutX="610.0" layoutY="47.0" text="Bienvenido: Diego Valladares" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="47.0" />
+      <MenuBar prefHeight="25.0" prefWidth="800.0" styleClass="menu" stylesheets="@../styles/Styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menu" text="Principal">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menu_actualizar" text="Actualizar">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#menu_buscador" text="Buscador" />
+                    <MenuItem mnemonicParsing="false" onAction="#menu_categoria_gastos" text="Categoría Gastos" />
+                    <MenuItem mnemonicParsing="false" onAction="#menu_categoria_ingresos" text="Categoría Ingresos" />
+                    <SeparatorMenuItem mnemonicParsing="false" text="-----------" />
+                    <MenuItem mnemonicParsing="false" onAction="#menu_balance" text="Balance" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Gastos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menu_add_gastos" text="Agregar">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="G" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ingresos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menu_add_ingresos" text="Agregar">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Estadistica">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#menu_gastos_agrupados" text="Gastos Agrupados" />
+                  <MenuItem mnemonicParsing="false" onAction="#menu_ingresos_agrupados" text="Ingresos Agrupados" />
+                  <MenuItem mnemonicParsing="false" onAction="#menu_curvas" text="Ingresos vs Gastos" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutX="10.0" layoutY="139.0" prefHeight="453.0" prefWidth="779.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="139.0">
+        <tabs>
+          <Tab id="lbl_gasto_mensual" fx:id="lbl_gasto_mensual" text="Gastos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabla_gastos" layoutX="6.0" prefHeight="424.0" prefWidth="779.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="editar_tgastos" prefWidth="40.0" text="" />
+                            <TableColumn fx:id="eliminar_tgastos" prefWidth="40.0" text="" />
+                            <TableColumn fx:id="fecha_tgastos" prefWidth="158.0" text="Fecha" />
+                            <TableColumn fx:id="categoria_tgastos" prefWidth="116.0" text="Categoría" />
+                            <TableColumn fx:id="mpago_tgastos" prefWidth="190.0" text="Medio de pago" />
+                            <TableColumn fx:id="monto_tgastos" prefWidth="162.0" text="Monto" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab id="lbl_ingreso_mensual" fx:id="lbl_ingreso_mensual" text="Ingresos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabla_ingresos" layoutX="94.0" layoutY="57.0" prefHeight="424.0" prefWidth="779.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                              <TableColumn fx:id="editar_tingresos" prefWidth="40.0" text="" />
+                              <TableColumn fx:id="eliminar_tingresos" prefWidth="40.0" text="" />
+                              <TableColumn fx:id="fecha_tingresos" prefWidth="152.0" text="Fecha" />
+                              <TableColumn fx:id="categoria_tingresos" prefWidth="116.0" text="Categoría" />
+                              <TableColumn fx:id="mpago_tingresos" prefWidth="190.0" text="Medio de pago" />
+                              <TableColumn fx:id="monto_tingresos" prefWidth="162.0" text="Monto" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <TitledPane animated="false" fx:id="lbl_info_mes" collapsible="false" layoutX="10.0" layoutY="33.0" prefHeight="89.0" prefWidth="489.0" styleClass="titleInformacion" stylesheets="@../styles/Styles.css" text="Información mes Agosto">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="460.0">
+               <children>
+                  <Label layoutX="63.0" layoutY="2.0" text="Total Gastos :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="37.0" text="Total Ingresos:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_total_saldo" layoutX="176.0" layoutY="37.0" text="\$0" textFill="#59ae17">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_total_gastos" layoutX="176.0" layoutY="2.0" text="\$0" textFill="#e41a1a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/wallet.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="559.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/usuario.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pfinanzaspersonales.CurvaSController">
+   <children>
+      <LineChart fx:id="chart_linechart" layoutX="14.0" layoutY="276.0" prefHeight="287.0" prefWidth="739.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="139.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="126.0" prefWidth="739.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label layoutX="21.0" layoutY="8.0" text="Comparativa de Ingresos vs Gastos">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="71.0" text="Filtrar por meses">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combobox_mes" layoutX="155.0" layoutY="69.0" onAction="#combobox_cambiar" prefHeight="25.0" prefWidth="528.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="loading_img" fitHeight="150.0" fitWidth="200.0" layoutX="288.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/preloader.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

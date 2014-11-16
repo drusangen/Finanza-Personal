@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pfinanzaspersonales.BalanceController">
+   <children>
+      <TableView fx:id="tabla_balance" layoutX="7.0" layoutY="55.0" prefHeight="436.0" prefWidth="766.0">
+        <columns>
+          <TableColumn fx:id="c_mes" prefWidth="234.0" text="Mes" />
+          <TableColumn fx:id="c_ingresos" prefWidth="201.0" text="Ingresos" />
+            <TableColumn fx:id="c_gastos" prefWidth="136.0" text="Gastos" />
+            <TableColumn fx:id="c_resumen" prefWidth="190.0" text="Resumen" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="23.0" text="Año" />
+      <ComboBox fx:id="cbb_anio" layoutX="44.0" layoutY="18.0" prefHeight="26.0" prefWidth="244.0" />
+      <Button layoutX="303.0" layoutY="18.0" onAction="#seleccionar_balance" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Seleccionar" />
+   </children>
+</AnchorPane>

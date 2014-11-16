@@ -1,0 +1,16 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+
+
+.menu .label {
+    -fx-text-fill: white;
+}
+.menu {
+    -fx-background-color: black;
+}
+
+.menu .context-menu{
+    -fx-background-color:black;
+}

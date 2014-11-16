@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.mycompany.pfinanzaspersonales.IngresosAgrupadosController">
+   <children>
+      <PieChart fx:id="chart_ingresos_agrupados" layoutX="21.0" layoutY="94.0" prefHeight="375.0" prefWidth="564.0" title="Ingresos" />
+      <Label layoutX="21.0" layoutY="14.0" text="Ingresos Agrupados">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pfinanzaspersonales.LoginController">
+   <children>
+      <Button id="btn_login" layoutX="109.0" layoutY="117.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnLoginAction" text="Ingresar" />
+      <PasswordField fx:id="txt_contrasena" layoutX="109.0" text="lavidaloca" layoutY="75.0" prefHeight="25.0" prefWidth="229.0" promptText="Contraseña" />
+      <TextField fx:id="txt_usuario" layoutX="109.0" text="email@dvdeveloper.com"  layoutY="41.0" prefHeight="25.0" prefWidth="229.0" promptText="Usuario" />
+      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="14.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pfinanzaspersonales.AgregarGastosController">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" text="Monto" />
+      <TextField fx:id="txt_monto" layoutX="24.0" layoutY="50.0" prefHeight="25.0" prefWidth="311.0" />
+      <Label layoutX="25.0" layoutY="108.0" text="Categoría" />
+      <ComboBox fx:id="cbb_categoria_gastos" layoutX="24.0" layoutY="136.0" prefHeight="25.0" prefWidth="311.0" />
+      <Button fx:id="btn_agregar" layoutX="22.0" layoutY="275.0" mnemonicParsing="false" onAction="#btn_agregar" text="Agregar" />
+      <Label fx:id="lbl_error_numero" layoutX="22.0" layoutY="75.0" text="Label" textFill="#f50909" visible="false" />
+      <Label fx:id="lbl_error_combobox" layoutX="22.0" layoutY="161.0" text="Label" textFill="#f50909" visible="false" />
+      <Label layoutX="25.0" layoutY="193.0" text="Medio de pago" />
+      <ComboBox fx:id="cbb_medio_pago" layoutX="24.0" layoutY="210.0" prefHeight="25.0" prefWidth="311.0" />
+   </children>
+</AnchorPane>
