@@ -1,8 +1,15 @@
 Finanzas---JavaFX---API-JAM, Versión 1.0
 ===========================
-Sistema de ingresos y gastos personales, desarrollado en java fx y php
+Aplicación de escritorio que permite gestionar gastos e ingresos personales, mostrando información detallada mensualmente, por fechas, tipo de pagos, entre otras opciones 
 
-[![Video](http://img.youtube.com/vi/f-_zzRUEBrQ/0.jpg)](http://youtu.be/f-_zzRUEBrQ)
+[Ver Video](http://youtu.be/f-_zzRUEBrQ)
+
+Vista Previa
+![Alt text](http://dvdeveloper.com/demo-images/fximagen1.png "Imagen 1")
+![Alt text](http://dvdeveloper.com/demo-images/fximagen2.png "Imagen 2")
+![Alt text](http://dvdeveloper.com/demo-images/fximagen3.png "Imagen 3")
+![Alt text](http://dvdeveloper.com/demo-images/fximagen4.png "Imagen 4")
+
 
 Requisitos. API, [Demo y Documentación](http://dvdeveloper.github.io/JAM/)
 --------------------------------------
@@ -67,9 +74,3 @@ Dependencias Maven
 </dependency>
 ```
 
-Imagenes demo
---------------------------------------
-![Alt text](http://dvdeveloper.com/demo-images/fximagen1.png "Imagen 1")
-![Alt text](http://dvdeveloper.com/demo-images/fximagen2.png "Imagen 2")
-![Alt text](http://dvdeveloper.com/demo-images/fximagen3.png "Imagen 3")
-![Alt text](http://dvdeveloper.com/demo-images/fximagen4.png "Imagen 4")
