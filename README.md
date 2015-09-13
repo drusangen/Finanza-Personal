@@ -1,4 +1,4 @@
-Finanzas---JavaFX---API-JAM, Versión 1.0
+Proyecto finanza personal, Versión 1.0
 ===========================
 Aplicación de escritorio que permite gestionar gastos e ingresos personales, mostrando información detallada mensualmente, por fechas, tipo de pagos, entre otras opciones 
 
